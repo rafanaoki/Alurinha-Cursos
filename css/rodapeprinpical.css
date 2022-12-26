@@ -1,0 +1,103 @@
+.subtitulo {
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.rodapePrincipal {
+	background-color: #324C64;
+	padding-top: 40px;
+}
+
+
+.rodapePrincipal .subtitulo {
+	color: #FFF;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-navMap-item {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.rodapePrincipal-navMap {
+    padding: 0 100px;
+}
+
+.rodapePrincipal-navMap-link {
+	text-decoration: none;
+	color: #FFF;
+	margin-top: 10px;
+}
+
+.rodapePrincipal-navMap-link {
+	font-size: .9em;
+}
+
+.navmap-list-title {
+	font-weight: 700;
+	font-size: 1.3em;
+	margin: .9em 0;
+	padding-left: .3em;
+	padding-top: .2em;
+	padding-bottom: .2em;
+}
+
+.navmap-list-title + .rodapePrincipal-navMap-link {
+	margin-top: 0;
+}
+
+.navmap-list-title-bancoDeDados { 
+	color: #EC6E5A; 
+	border-left: 4px solid #EC6E5A; 
+}
+
+.navmap-list-title-framework { 
+	color: #AD85BF; 
+	border-left: 4px solid #AD85BF; 
+}
+
+.navmap-list-title-frontend { 
+	color: #5EC6F3; 
+	border-left: 4px solid #5EC6F3; 
+}
+
+.navmap-list-title-backend { 
+	color: #25D285; 
+	border-left: 4px solid #25D285; 
+}
+
+
+@media screen and (max-width: 1000px) {
+
+	.rodapePrincipal-navMap-list {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.rodapePrincipal-navMap-item {
+		width: 40%;
+		max-width: 320px;
+		margin-bottom: 30px;
+	}
+
+}
+
+
+@media screen and (max-width: 580px) {
+	.rodapePrincipal-navMap-list {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.rodapePrincipal-navMap-item {
+		max-width: 250px;
+		width: 100%;
+		text-align: justify;
+	}
+}
